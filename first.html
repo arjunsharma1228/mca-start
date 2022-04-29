@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+      margin-left: 250px;
+      margin-top: 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .sidenav {
+
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      #main {
+        margin-left: 1px;
+        margin-top: 20px;
+      }
+    }
+
+    .dropdown-container {
+      display: none;
+      background-color: #262626;
+      padding-left: 8px;
+      font-size: 10px;
+    }
+
+    h1 {
+      background-color: white;
+      padding: 5px;
+      text-align: center;
+      font-size: 30PX;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="mySidenav" class="sidenav">
+
+    <h1>MCA ONLINE </h1>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="#services"><i class="fa fa-fw fa-wrench"></i> notification</a>
+    <a href="#clients"><i class="fa fa-fw fa-user"></i> Placement</a>
+    <a href="#" class="dropdown-btn">Semester
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-container">
+      <a href="first.html"> 1 semester</a>
+      <a href="second.html"> 2 semester</a>
+      <a href="third.html"> 3 semester</a>
+
+      <a href="fourth.html"> 4 semester</a>
+    </div>
+
+    <a href="#contact"><i class="fa fa-fw fa-envelope"></i> contact us</a>
+
+    <a href="#" class="dropdown-btn">Video
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-container">
+      <a href="card.html">DATA STRUCTURE</a>
+      <a href="#">O.S</a>
+      <a href="#">T.O.C</a>
+      <a href="#">discreat Maths</a>
+    </div>
+
+    <a href="#" class="dropdown-btn">Exam paper
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-container">
+      <a href="#">DATA STRUCTURE</a>
+      <a href="#">O.S</a>
+      <a href="#">T.O.C</a>
+      <a href="#">discreat Maths</a>
+    </div>
+
+    <a href="#" class="dropdown-btn">Minor exam
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-container">
+      <a href="./Quiz Application with Timer/index.html">DATA STRUCTURE</a>
+      <a href="#">O.S</a>
+      <a href="#">T.O.C</a>
+      <a href="#">discreat Maths</a>
+    </div>
+
+    <a href="#" class="dropdown-btn">Assignment
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-container">
+      <a href="#">DATA STRUCTURE</a>
+      <a href="#">O.S</a>
+      <a href="#">T.O.C</a>
+      <a href="#">discreat Maths</a>
+    </div>
+
+    <a href="#">logout</a>
+
+  </div>
+
+  <span style="font-size:30px;cursor:pointer; float:right; padding: 25px; " onclick="openNav()">&#9776; open</span>
+  </div>
+
+  <div id="main">
+    <h2>Sidenav Push Example</h2>
+    <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+    <h2>Sidebar</h2>
+    <p>This sidebar is of full height (100%) and always shown.</p>
+    <p>Scroll down the page to see the result.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+      et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+      repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+      et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+      repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+      et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+      repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+      et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+      repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  </div>
+
+
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+
+      //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+</body>
+
+</html>
